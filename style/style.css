@@ -1,0 +1,827 @@
+/* Geral
+------------------------------------------------------ */
+* {
+	font-family: 'Open Sans', Verdana, Arial, sans-serif;	
+}
+body{
+	font-size:12px;
+	margin: 0;
+}
+@font-face {
+	font-family: 'Open Sans';
+	url(‘fontes/OpenSans-Regular.ttf’) format(‘truetype’);
+}
+textarea{
+	resize:none;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+hr.separador{
+	width:95%;
+	border-left:0;
+	border-top:1px solid #CCC;	
+}
+h4{
+	font-weight:600;
+	margin:0;
+	display:inline;
+}
+a:link, a:visited{
+	text-decoration:none;
+	color:#000;	
+}
+#imagem_perfil,.imagem_perfil{
+	border: 1px solid #DDD;
+}
+#footer{
+	min-height: 60px;
+	clear: both;
+	background:url("../imagem/black_lozenge.png");
+	color:#669933;
+	text-align: center;
+}
+	#footer span {
+		margin-top:10px;
+		display: inline-block;
+	}
+img{
+	border:0;
+}
+a:link{
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none;
+}
+
+/* Index
+------------------------------------------------------ */
+
+.erro{
+	font-size:10px;
+	color:red;
+}
+#login_container_topo{
+	background-color:#2C511D;
+	color:#A1D88C;
+	text-align:center;
+	height:75px;
+}
+form#login{
+	text-align:left;
+	width:400px;
+	height:65px;
+	margin:5px auto;
+	display:inline-block;
+}
+.login_texto{
+	margin-left:5px;
+}
+form#login a:link,form#login a:visited{
+	text-decoration:none;
+	color:#A1D88C;
+}
+#login_container_email{
+	float:left;
+	width:160px;
+	height:55px;
+	display:inline-block;
+}
+#login_container_senha{
+	float:left;
+	width:160px;
+	height:55px;
+	display:inline-block;
+	margin-left:5px;
+}
+#login_container_entrar{
+	float:right;
+	width:75px;
+	height:55px;
+	display:inline-block;
+}
+#login_botao_entrar{
+	margin:0 auto;
+	width:70px;
+	height:26px;
+	margin-top:18px;
+	clear:both;
+	background-color:#669933;
+	color:white;
+	border:1px solid #4D7327;
+}	
+div#login_container_principal{
+	background:#FFF url('../imagem/bg_index.jpg') bottom;
+	background-repeat:repeat-x;
+	padding-bottom:15px;
+}
+div#login_container_all{
+	width:900px;
+	height:540px;
+	margin:0 auto;
+}
+div#login_container_up{
+	height:160px;
+	width:900px;
+}
+#login_subcontainer_up{
+	width:890px;
+	height:150px;	
+	margin:5px 5px 5px 5px;		
+	display:inline-block;
+	background-image:url('../imagem/bg_anuncio.jpg');
+	background-repeat:no-repeat;	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;		
+}
+div#login_container_left{
+	width:550px;
+	height:380px;
+	float:left;
+}
+#login_subcontainer_left{
+	width:540px;
+	height:375px;	
+	margin:5px 5px 0px 5px;		
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;		
+}
+#subcontainer_left_texto{
+	display:inline-block;
+	width:440px;
+	height:120px;
+	margin:240px 50px 15px 50px;
+}		
+#texto_apresentacao{
+	color:#FFFFFF;
+	text-shadow: 2px 2px #111111;
+	font-size:25px;
+}
+div#login_container_right{
+	width:350px;
+	height:380px;
+	float:right;
+}
+div#login_subcontainer_right{
+	width:340px;
+	height:375px;
+	background-color:#91C74B;
+	margin:5px 5px 0px 5px;		
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;		
+}
+form#cadastro{
+	margin:15px 15px 0px 15px;
+	height:310px;
+	width:320px;
+	display:inline-block;
+}
+input.cadastro_campo{
+	width:305px;
+	height:25px;
+	border:1px solid #669933;
+}
+.cadastro_texto{
+	line-height:20px;
+}
+#campo_genero{
+	height:25px;
+	margin:0;
+	border:1px solid #669933;
+}
+#campo_dia{
+	width:60px;
+	height:25px;
+	border:1px solid #669933;
+}
+#campo_mes{
+	width:145px;
+	height:25px;
+	border:1px solid #669933;
+}
+#campo_ano{
+	width:85px;
+	height:25px;
+	border:1px solid #669933;
+}
+#cadastro_botao{
+	margin:0 auto;
+	width:100px;
+	height:40px;
+	clear:both;
+	display:block;
+	background-color:#669933;
+	color:white;
+	border:1px solid #4D7327;
+	font-weight:bold;
+}
+
+/* Form - Editar Informações
+------------------------------------------------------ */
+
+#editar_conteudo_container{
+	position:relative;
+	background-color:#B9EA79;
+	display:inline-block;
+	width:800px;
+	height:500px;
+	-moz-box-shadow: 3px 3px 5px 6px #222;
+  	-webkit-box-shadow: 3px 3px 5px 6px #222;
+  	box-shadow: 0px 0px 20px 1px #222;
+}		
+#sub_editar_informacoes_left{
+	width:400px;
+	height:450px;
+	float:left;
+	margin:30px 0px 20px 0px;
+}
+#sub_editar_informacoes_right{
+	width:400px;
+	height:450px;
+	float:right;
+	margin:0px 0px 20px 0px;
+}
+	#sub_gerenciar_conta{
+		float:right;
+		margin-right:20px;
+	}
+	#sub_gerenciar_conta a{
+		margin-left:20px;
+		background:#FFF;
+	}
+#botao_fechar_topo{
+	width:24px;
+	height:24px;
+	display:inline-block;
+	float:right;
+	background: url(../imagem/botao_fechar.png);
+	margin:6px 10px 0px 0px;
+}
+.fechar{
+	cursor:pointer;
+}
+.erro{
+	font-size:10px;
+	color:red;
+}
+iframe{
+	width:400px;
+	float:right;
+	border:0;
+}
+form#info_pessoais{
+	margin:15px 15px 0px 15px;
+	width:320px;
+	display:inline-block;
+}
+input.cadastro_campo{
+	width:305px;
+	height:22px;
+	border:1px solid #669933;
+}
+.cadastro_texto{
+	line-height:20px;
+}
+#campo_genero{
+	height:25px;
+	margin:0;
+	border:1px solid #669933;
+}
+#campo_dia{
+	width:60px;
+	height:25px;
+	border:1px solid #669933;
+}
+#campo_mes{
+	width:145px;
+	height:25px;
+	border:1px solid #669933;
+}
+#campo_ano{
+	width:85px;
+	height:25px;
+	border:1px solid #669933;
+}
+#cadastro_botao{
+	margin:0 auto;
+	width:100px;
+	height:40px;
+	clear:both;
+	display:block;
+	background-color:#669933;
+	color:white;
+	border:1px solid #4D7327;
+	font-weight:bold;
+}
+
+/* Home - Top
+------------------------------------------------------ */
+
+#container_topo{
+	min-width:1000px;
+	height:40px;
+	background-color:#2C511D;
+	color:#FFFFFF;
+	text-align:center;
+}
+#subcontainer_topo{
+	margin:0px auto;
+	width:980px;
+	height:40px;
+	display:inline-block;
+}
+#container_logo{
+	float:left;
+	display:inline-block;
+	
+}
+	h2#logo{
+		margin-top:10px;
+	}
+#container_busca{
+		margin:10px 0px 2px 0px;
+		width:400px;
+		height:28px;
+		float:left;
+}
+#busca_campo{
+	width:250px;
+	height:21px;
+	padding:1;
+	border:0;
+}
+#busca_botao{
+	width:70px;
+	height:25px;
+	background-color:#4D7327;
+	color:white;
+	padding:0;
+	border:0;
+}
+#container_navegacao{
+	margin:10px 0px 2px 0px;
+	height:28px;
+	float:right;
+	display:inline-block;
+}	
+a#home , a#home:link , a#sair , a#sair:link{
+	text-decoration:none;
+	padding:8px 15px;
+	line-height:12px;
+	display:inline-block;
+	color:#FFFFFF;
+}
+a#home:hover , a#sair:hover{
+	background-color:#4D7327;
+}
+			
+/* Containers
+------------------------------------------------------ */		
+
+#container_principal{
+	background-color:#EFEFEF;
+	overflow:hidden;
+	min-width:1000px;
+}					
+#container_all{
+	background-color:#FFF;
+	padding:0px 10px 0px 10px;
+	margin:0 auto;
+	width:980px;
+	min-height:680px;
+	clear:both;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+}
+	#subcontainer_all{
+		float:left;
+		width:100%;
+	}
+#container_left{
+	width:680px;
+	min-height:500px;
+	float:left;
+	margin:10px 0px 15px 0px;
+}
+#subcontainer_left{
+	width:150px;
+	float:left;
+	background-color:#888888;
+}
+div#container_usuario{
+	width:150px;
+	height:150px;
+	float:left;
+	background-color:#FFFFFF;
+}
+div.container_usuario_imagem{
+	width:150px;
+	height:150px;
+	margin:0;
+	background-color:#EEEEEE;
+}	
+div#menu_usuario{
+	margin-top:15px;
+	border:1px solid #CCCCCC;
+}
+a.menu_usuario_topico , a.menu_usuario_topico:link{
+	display:block;
+	background-color:#EEEEEE;
+	line-height:25px;
+	color:#000000;
+}
+a.menu_usuario_topico:hover{
+	display:block;
+	background-color:#AAAAAA;
+	color:#000000;
+}
+a.menu_usuario_topico:visited{
+	color:#000000;
+}
+span.menu_topico{
+	margin-left:8px;
+}
+#container_usuario_informacao{
+	width:510px;
+	min-height:200px;
+	float:right;
+	background-color:#EFEFEF;
+	margin:0px 9px 0px 9px;
+	display:inline-block;
+	border:1px solid #CCCCCC;
+}		
+#subcontainer_usuario_informacao{
+	width:510px;
+	min-height:130px;
+	margin:0px;
+	float:right;
+	display:inline-block;
+}
+	.conteudo_usuario_informacao{
+		margin:5px 5px 0px 5px;
+	}
+#container_notificacoes{
+	background-color:#EFEFEF;
+	display:inline-block;
+	width:510px;
+	min-height:100px;
+	clear:both;
+}
+	.container_solicitacao_amizade{
+		width:500px;
+		margin:0px 5px 5px 0px;
+		display:inline-block;
+	}
+		.container_imagem_solicitacao_amizade{
+			float:left;
+			width:50px;
+		}
+		.container_dados_solicitacao_amizade{
+			float:right;
+			width:440px;
+			margin-left:5px;
+		}
+/* Recados
+------------------------------------------------------ */
+			
+#container_recados{
+	width:510px;
+	min-height:100px;
+	background-color:#FFFFFF;
+	margin:0 auto;
+	position:relative;
+	margin:0 auto;
+	padding-top:10px;
+
+}
+#container_postar_recados{
+	margin-top:10px;
+	display:inline;
+}
+.container_recado{
+	width:510px;
+	margin:0px;
+	min-height:115px;
+	background-color:#FFFFFF;
+	clear:both;
+	border-top:3px solid #99CC33;
+}			
+.imagem_usuario_recado{
+	margin:10px 10px 0px 10px;
+	float:left;
+}
+.subcontainer_recado_cabecalho{
+	margin:10px 15px 0px 0px;
+	width:411px;
+	height:20px;
+	float:right;
+}
+.nome_usuario_recado{
+	margin:10px 0px 0px 0px;
+	font-weight:bold;
+	font-size:14px;
+	color:#2C511D;
+}
+.data_recado{
+	float:right;
+	color:#888888;
+}
+.subcontainer_recado_texto{
+	width:411px;
+	min-height:50px;
+	float:right;
+	margin-right:15px;
+}
+.texto_recado{
+	
+}
+.subcontainer_recado_rodape{
+	margin:10px 10px 10px 84px;
+	width:406px;
+	display:inline-block;
+}
+.txta_recado{
+	width:480px;
+	float:right;	
+}
+.sbmt_recado{
+	float:right;
+}
+/* -------------------- Fim - Recados -------------------- */					
+				
+#nome{
+	font-size:16px;
+}
+#status_campo{
+	height:19px;
+	width:250px;
+}
+#status_botao{
+	width:90px;
+	height:25px;
+	background-color:#4D7327;
+	color:white;
+	padding:0;
+	border:1px solid #273C14;
+}
+#container_right{
+	width:300px;
+	min-height:500px;
+	float:right;
+	margin:10px 0px 15px 0px;
+}
+/* -------------------- Início - Amigos/Grupos -------------------- */
+.subcontainer_right_titulo{
+	height:30px;
+	background-color:#4D7327;
+	color:#FFFFFF;
+	text-align: center;
+}
+span.titulo_right_titulo{
+	line-height:16px;
+	margin:7px 0px 7px 0px;
+	display:inline-block;
+}
+.subcontainer_right{
+	overflow:auto;
+	height:298px;
+	width:298px;
+	background-color:#FFFFFF;
+	margin-bottom:15px;
+	border:1px solid #CCCCCC;
+}
+div.content_box_right{
+	background-color:#EFEFEF;
+	height:98px;
+	width:90px;
+	float:left;
+	overflow:hidden;
+	margin:5px 3px 0px 0px;
+	text-align:center;
+}	
+span.nome_amigo{
+	color:#2C511D;
+	line-height:11px;
+	font-size:11px;
+	display:inline-block;
+	line-height:1.2;
+	margin:0px 5px 0px 5px;
+}
+.imagem_box_right{
+	margin-top:5px;
+}
+		
+/* -------------------- Fim - Amigos/Grupos -------------------- */
+	
+a:link,a:visited{
+	text-decoration:none;
+}
+li{
+	list-style-type:none;
+}
+
+/* Form
+------------------------------------------------------ */
+#container_editar_informacoes {
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	opacity:0.3;
+	z-index:3;
+	position:fixed;
+	display:none;
+}
+#fundo {
+	width:100%;
+	height:100%;
+	z-index:4;
+	position:absolute;
+	display:none;
+}
+#subcontainer_editar_informacoes {
+	width:800px;
+	height:500px;
+	z-index:10;
+	position:fixed;
+	margin:80px auto;
+	display:none;
+	right:0;
+	left:0;							
+}
+#container_criar_grupo {
+	background:#B9EA79;
+	width:400px;
+	height:400px;
+	z-index:10;
+	position:fixed;
+	margin:80px auto;
+	display:none;
+	right:0;
+	left:0;
+	-moz-box-shadow: 3px 3px 5px 6px #222;
+	-webkit-box-shadow: 3px 3px 5px 6px #222;
+	box-shadow: 0px 0px 20px 1px #222;
+}
+	#subcontainer_criar_grupo{
+	
+	}
+	#form_editar_grupo{
+		margin:20px 10px 0px 10px;
+	
+	}
+#recados_aviso {
+	width:200px;
+	height:50px;
+	background-color:lightblue;
+	border:1px dotted black;
+	display:block;
+	text-align:center;
+	margin:15px auto 15px auto;
+}
+
+/* Documentos
+------------------------------------------------------ */
+#container-form-documento{
+	background-color:#B9EA79;
+}
+	#container-form-documento form{
+		margin:0px 0px 20px 20px;
+	}
+.container_documento {
+	width:160px;
+	height:275px;
+	float:left;
+	border:1px solid #DDD;
+	overflow:hidden;
+	margin:17px;
+}
+	a.excluir_documento{
+		font-weight:bold;
+		color:#2C511D;
+	}
+	.titulo_documento{
+		margin:0px 10px 0px 10px;
+		font-weight:bold;
+		color:#2C511D;
+		display: inline-block;
+	}
+.clear {
+	clear:both;
+}
+/* Grupos
+------------------------------------------------------ */
+#grupo_container_left{
+	width:680px;
+	min-height:500px;
+	float:left;
+	margin:15px 0px 0px 0px;
+}
+#container_grupo_informacao{
+	width:510px;
+	min-height:600px;
+	float:right;
+	background-color:#FFF;
+	margin:0px 9px 0px 9px;
+	display:inline-block;
+	border-right:1px solid #EEE;
+	border-left:1px solid #EEE;
+}
+#info_grupo{
+	display:block;
+	margin-left:5px;	
+}
+	#info_grupo h2{
+		margin:0;	
+	}
+#grupo_container_right{
+	width:300px;
+	min-height:500px;
+	float:right;
+	margin:0px 0px 15px 0px;
+}
+#grupo_subcontainer_left{
+	width:150px;
+	float:left;
+	background-color:#888888;
+}
+.grupo_subcontainer_right{
+	overflow:auto;
+	width:298px;
+	margin:15px 0px 0px 0px;
+}
+/* Tópicos
+------------------------------------------------------ */
+#txta-cria-topico{
+	width:497px;
+	margin:20px 5px 0px 5px;
+	padding:0px;
+	max-width:100%;
+}
+#snd-cria-topico{
+	float:right;
+	margin-right:5px;	
+}
+#container-topicos{
+	width:500px;
+	margin:20px 5px 0px 5px;	
+}
+	.container-single-topico{
+		width:500px;
+		margin-top:40px;
+		display:inline-block;
+	}
+		.anc-img-topico{
+			float:left;
+		}
+		.container-right-topico{
+			float:right;
+			width:434px;
+		}
+		.content-topico{
+			min-height:64px;
+		}
+		.content-info-topico{
+			background:#DDD;
+		}
+		.txt-content-topico{
+			line-height:2;
+		}
+		.txta-cria-comentario{
+			width:434px;
+			max-width:100%;
+			margin:0;
+			padding:0px;
+			resize:none;
+		}
+/* Comentários
+------------------------------------------------------ */
+	.container-single-comentario{
+		width:434px;
+		margin-top:10px;
+		display:inline-block;
+	}
+		.anc-img-comentario{
+			float:left;
+		}
+		.container-right-comentario{
+			float:right;
+			width:398px;
+			
+		}
+		.content-comentario{
+			min-height:64px;
+		}
+		.content-info-comentario{
+			background:#DDD;
+		}
+		h4{
+			font-weight:600;
+			margin:0;
+		}
+		.txt-content-comentario{
+			line-height:2;
+		}
